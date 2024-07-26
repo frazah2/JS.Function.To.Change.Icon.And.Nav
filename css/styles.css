@@ -1,0 +1,136 @@
+
+
+body{
+    margin: 0 auto;
+    padding: 0;
+    background-image: url('https://e0.pxfuel.com/wallpapers/850/404/desktop-wallpaper-brown-and-orange-3-piece-patio-set-outside-a-coffee-coffee-shop-tip-anime-coffee-shop.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+
+.navClass{
+    width: 100%;
+    min-height: 70px;
+    background: #c5c5d0;
+    float: left;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo, .menu, .icon, .burgerMenu{
+    min-width: 100px;
+    min-height: 70px;
+    background: transparent;
+   
+    float: left;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu ul {
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li{
+    list-style-type: none;
+    float: left;
+    color: rgb(84, 66, 66);
+    padding: 5px;
+    margin: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 800;
+}
+
+
+.MobileNav{
+    width: 100%;
+    min-height: 70px;
+    background: rgb(84, 66, 66);
+    float: left;
+    display: none;
+    position: relative;
+    
+}
+.right{
+    float: right;
+}
+
+.menuDesign{
+    font-size: 30px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}   
+
+.MobileNavMenu{
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(152, 150, 163);
+    float: left;
+    position: fixed;
+    top: 70px;
+    left: 100%;
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.MobileNavMenuDeactivate{
+    top: 70px;
+    left: 0px;
+}
+
+.MobileNavMenu ul{
+    padding: 0px;
+}
+
+.MobileNavMenu li{
+    width: 100%;
+    min-height: 50px;
+    float: left;
+    margin: 2px 0;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: rgb(84, 66, 66);
+    font-weight: 800;
+    
+}
+
+
+@media only screen and (max-width: 768px) {
+    .navClass {
+      display: none;
+    }
+
+    .MobileNav{
+        display: block;
+    }
+}
+.logo{
+    padding-left: 10px;
+}
+.fa-times{
+    float: left;
+    display: none;
+}
+.theX{
+   display: block;
+}
+.buuug{
+    display: none;
+}
